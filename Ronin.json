@@ -1,0 +1,50 @@
+{
+  "gameSystem": {
+    "name": "Ronin",
+    "id": "3eb6-1682-4a4c-ece0",
+    "authorContact": "ayaxsfs@gmail.com",
+    "authorName": "Ayaxs Fuentealba",
+    "authorUrl": "http://www.ordoaustralis.cl",
+    "battleScribeVersion": 2.03,
+    "revision": 1,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [{"name": "Models", "id": "ff49-fc6d-09d5-fe1e", "hidden": false}, {"name": "Swords for Hire", "id": "b94a-340a-0749-fb88", "hidden": false}],
+    "costTypes": [{"name": " Points", "id": "7caa-6622-6b1e-9b13", "defaultCostLimit": 0}],
+    "forceEntries": [
+      {
+        "name": "Buntai",
+        "id": "2243-ba3d-43c3-9029",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Models", "id": "2243-ba3d-43c3-9029-ff49-fc6d-09d5-fe1e", "hidden": false, "targetId": "ff49-fc6d-09d5-fe1e"},
+          {"name": "Swords for Hire", "id": "2243-ba3d-43c3-9029-b94a-340a-0749-fb88", "hidden": false, "targetId": "b94a-340a-0749-fb88"}
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "b828-13a7-92f7-a18e",
+        "characteristicTypes": [
+          {"name": "Rank", "id": "49f4-9335-3be0-698e"},
+          {"name": "CP", "id": "3ecc-5b19-34bd-13d9"},
+          {"name": "Initiative", "id": "34fd-a5bd-1529-7da5"},
+          {"name": "Fight", "id": "8958-bb37-bf92-f529"},
+          {"name": "Shoot", "id": "6f7f-4f32-c392-ebcf"},
+          {"name": "Armour", "id": "135e-7812-2cfa-61d6"}
+        ]
+      },
+      {
+        "name": "Melee Weapon",
+        "id": "e098-25d7-b6d3-36bb",
+        "characteristicTypes": [{"name": "Combat Pool", "id": "d706-c272-0576-d554"}, {"name": "Initiative", "id": "921a-e2e7-3cce-4231"}, {"name": "Fight", "id": "d3c6-d2fb-9b27-2c91"}]
+      },
+      {
+        "name": "Missile Weapon",
+        "id": "dc69-12a4-79f5-5ac5",
+        "characteristicTypes": [{"name": "Combat Pool", "id": "2a49-ff1e-99ba-3042"}, {"name": "Shoot", "id": "b396-8a3f-a339-6de2"}, {"name": "Range", "id": "bd09-85ef-8223-5ba2"}]
+      }
+    ]
+  }
+}

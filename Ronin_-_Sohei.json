@@ -1,0 +1,2712 @@
+{
+  "catalogue": {
+    "name": "Ronin - Sohei",
+    "id": "8a0d-61fc-2ea5-073f",
+    "authorContact": "ayaxsfs@gmail.com",
+    "authorName": "Ayaxs Fuentealba",
+    "authorUrl": "http://www.ordoaustralis.cl",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "3eb6-1682-4a4c-ece0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "RONIN ERRATA & CLARIFICATIONS (OCTOBER 2013)", "id": "8a0d-61fc-pub1"}],
+    "rules": [
+      {"name": "Sohei Buntai", "id": "2a20-47b6-63e4-51c9", "description": "No special rules apply to the Sohei.", "hidden": false},
+      {"name": "Swords for Hire", "id": "2a2e-742b-0016-7cea", "description": "No special rules apply to the Sohei.", "hidden": false},
+      {
+        "name": "Morale",
+        "id": "3b31-e049-4e58-8e51",
+        "description": "Most Sohei are Fearless and so never check Morale. Temple Attendants test on a Morale of 7.",
+        "hidden": false
+      },
+      {
+        "name": "Composition",
+        "id": "e9f1-60b5-6fff-380c",
+        "description": "• There may only be one Rank 5 model.\n• No more than 25% of the models may be armed with a teppo, and no more than 50% may have a\nmissile weapon.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Initiate",
+        "id": "e4e9-f718-2f8a-68ba",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "e4e9-f718-2f8a-68ba-ff49-fc6d-09d5-fe1e", "primary": true, "targetId": "ff49-fc6d-09d5-fe1e"}],
+        "constraints": [
+          {
+            "id": "6cf7-daaf-b96f-7afc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 19}],
+        "profiles": [
+          {
+            "name": "Initiate",
+            "id": "59e6-637d-a2d9-6b8f",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "2", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "2", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "2", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "3", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "1", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "None", "typeId": "135e-7812-2cfa-61d6"}
+            ],
+            "modifiers": [
+              {
+                "field": "135e-7812-2cfa-61d6",
+                "type": "set",
+                "value": "Medium",
+                "conditions": [
+                  {
+                    "childId": "0f97-d366-8951-4de2",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "e4e9-f718-2f8a-68ba",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weapons",
+            "id": "8099-66a1-6bef-dd9d",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "e681-6ba7-8513-afb6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "3416-b6eb-485e-7a08",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "New EntryLink",
+                "id": "b267-ceb9-dbc2-cae3",
+                "hidden": false,
+                "targetId": "9151-ea29-bcd1-75f1",
+                "type": "selectionEntry",
+                "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+              },
+              {"name": "New EntryLink", "id": "0030-1748-5102-ea70", "hidden": false, "targetId": "63aa-c82a-738f-8b71", "type": "selectionEntryGroup"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Armour",
+            "id": "1dcc-0e8c-914a-07c7",
+            "collective": false,
+            "defaultSelectionEntryId": "0f97-d366-8951-4de2",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "ad3e-6bc6-7394-b462",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "46cb-e655-3754-d751",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Medium Armour",
+                "id": "0f97-d366-8951-4de2",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "0a3f-706d-f110-0710",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "No Armour",
+                "id": "93f7-d070-5c5f-9718",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "4c88-6e9f-2ade-ab5b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": -4}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Asistant",
+        "id": "3382-8001-ffd6-2713",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "3382-8001-ffd6-2713-ff49-fc6d-09d5-fe1e", "primary": true, "targetId": "ff49-fc6d-09d5-fe1e"}],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 8}],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "6080-bc4f-fd37-1f5a",
+            "hidden": false,
+            "targetId": "d07c-a745-99a6-f7ef",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "a5e0-2743-e78d-5329",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "eb41-999e-671c-dd32",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0},
+              {"field": "name", "type": "set", "value": "Fearless when within 3” of any model of Rank 2 or higher"}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Temple Asistant",
+            "id": "6323-3a65-2ae6-aa76",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "1", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "1", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "1", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "1", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "0", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "None", "typeId": "135e-7812-2cfa-61d6"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weapons",
+            "id": "daa5-7616-afdf-c6c0",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "63e2-dd29-6947-f40c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "d304-d075-81fd-9bc7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "New EntryLink",
+                "id": "4431-2ea5-7a2a-5628",
+                "hidden": false,
+                "targetId": "6619-d59a-6d3d-5341",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "3415-9340-c610-a22c",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Senior Sohei",
+        "id": "3193-4885-c260-7a51",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "3193-4885-c260-7a51-ff49-fc6d-09d5-fe1e", "primary": true, "targetId": "ff49-fc6d-09d5-fe1e"}],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 31}],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "8e29-7c85-42c9-e60f",
+            "hidden": false,
+            "targetId": "d07c-a745-99a6-f7ef",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "74d5-8718-e3ce-de59",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "0e18-b457-4c52-e6e9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Senior Sohei",
+            "id": "aef8-ad95-f07c-f33a",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "4", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "4", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "4", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "4", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "2", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "None", "typeId": "135e-7812-2cfa-61d6"}
+            ],
+            "modifiers": [
+              {
+                "field": "135e-7812-2cfa-61d6",
+                "type": "set",
+                "value": "Medium",
+                "conditions": [
+                  {
+                    "childId": "cfbe-224c-62d0-d764",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "3193-4885-c260-7a51",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weapons",
+            "id": "c96f-7e34-16d4-de75",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "c7fa-b47a-0daa-e184",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "5ecc-ab45-9fa5-3fbd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {"name": "New EntryLink", "id": "d437-e02b-d1a0-d263", "hidden": false, "targetId": "9151-ea29-bcd1-75f1", "type": "selectionEntry"},
+              {"name": "New EntryLink", "id": "b177-5fd6-99e9-c66a", "hidden": false, "targetId": "5eec-3fbb-226d-08db", "type": "selectionEntryGroup"}
+            ]
+          },
+          {
+            "name": "Additional Attributes",
+            "id": "e290-70e6-8f3c-9c70",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "c5c1-f03e-8b8b-8460",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "New EntryLink",
+                "id": "f4d6-23a4-5439-106f",
+                "hidden": false,
+                "targetId": "3b98-f108-79fc-c086",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "9562-154e-f384-6a2a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Armour",
+            "id": "cb42-02a1-ccf0-8604",
+            "collective": false,
+            "defaultSelectionEntryId": "cfbe-224c-62d0-d764",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "0d5d-e06b-2f6e-7f8c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "b9cb-6a60-7666-e306",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Medium Armour",
+                "id": "cfbe-224c-62d0-d764",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "85ac-17ff-3a69-a14d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "No Armour",
+                "id": "3b51-f6a4-d05f-da15",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "f510-e78a-4bde-ec4f",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": -4}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grandmaster",
+        "id": "d68d-fabd-a6a5-a345",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "d68d-fabd-a6a5-a345-ff49-fc6d-09d5-fe1e", "primary": true, "targetId": "ff49-fc6d-09d5-fe1e"}],
+        "constraints": [
+          {
+            "id": "398a-24c6-87b8-d154",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 36}],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "14d6-5ccb-1e8d-b5ed",
+            "hidden": false,
+            "targetId": "d07c-a745-99a6-f7ef",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "4f10-64c4-f556-11fb",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "f1ab-7cfa-cf92-0c4a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Grandmaster",
+            "id": "4676-5668-11b9-0aa2",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "5", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "5", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "4", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "5", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "3", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "None", "typeId": "135e-7812-2cfa-61d6"}
+            ],
+            "modifiers": [
+              {
+                "field": "135e-7812-2cfa-61d6",
+                "type": "set",
+                "value": "Medium",
+                "conditions": [
+                  {
+                    "childId": "9092-e20d-1ad9-7bae",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "d68d-fabd-a6a5-a345",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weapons",
+            "id": "b342-4987-49f5-4904",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "e694-777a-b9f0-da6e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "4841-c766-cdf0-48f7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {"name": "New EntryLink", "id": "861d-b0ce-76b8-c52e", "hidden": false, "targetId": "9151-ea29-bcd1-75f1", "type": "selectionEntry"},
+              {"name": "New EntryLink", "id": "80f8-63a3-a69a-1286", "hidden": false, "targetId": "5eec-3fbb-226d-08db", "type": "selectionEntryGroup"}
+            ]
+          },
+          {
+            "name": "Additional Attributes",
+            "id": "83bf-435f-0498-b863",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "8bf2-1d8d-c125-d1f8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "New EntryLink",
+                "id": "56d9-2b40-8c00-6b85",
+                "hidden": false,
+                "targetId": "3b98-f108-79fc-c086",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "5584-0370-f3b9-65cd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Armour",
+            "id": "055b-1778-00f0-3246",
+            "collective": false,
+            "defaultSelectionEntryId": "9092-e20d-1ad9-7bae",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "3f1b-6eba-5fb1-01db",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "2852-4990-0e2b-0af6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Medium Armour",
+                "id": "9092-e20d-1ad9-7bae",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "89da-12d7-3c55-7339",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "No Armour",
+                "id": "27b2-6066-428d-bf27",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "83df-a7bc-c70d-b294",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": -4}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sohei",
+        "id": "aaeb-c13c-65f1-a7f1",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "aaeb-c13c-65f1-a7f1-ff49-fc6d-09d5-fe1e", "primary": true, "targetId": "ff49-fc6d-09d5-fe1e"}],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 26}],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "9194-9174-d052-2120",
+            "hidden": false,
+            "targetId": "d07c-a745-99a6-f7ef",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "b7b5-67a7-3b20-ed23",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "3b0a-d16e-99ad-d3a0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sohei",
+            "id": "4525-2f83-ce28-ec0b",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "3", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "3", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "3", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "3", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "2", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "None", "typeId": "135e-7812-2cfa-61d6"}
+            ],
+            "modifiers": [
+              {
+                "field": "135e-7812-2cfa-61d6",
+                "type": "set",
+                "value": "Medium",
+                "conditions": [
+                  {
+                    "childId": "23e3-0548-ab99-9192",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "aaeb-c13c-65f1-a7f1",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Weapons",
+            "id": "00f8-fd05-1073-795c",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "1ac7-8bed-9a82-0463",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "9007-8d66-4182-7164",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {"name": "New EntryLink", "id": "aa6a-c548-a003-932d", "hidden": false, "targetId": "9151-ea29-bcd1-75f1", "type": "selectionEntry"},
+              {"name": "New EntryLink", "id": "0de3-4238-fc9b-8284", "hidden": false, "targetId": "5eec-3fbb-226d-08db", "type": "selectionEntryGroup"}
+            ]
+          },
+          {
+            "name": "Additional Attributes",
+            "id": "2142-8966-08b6-da55",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "0fff-adb8-bb8e-611c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "New EntryLink",
+                "id": "a264-d46e-4b8d-ecea",
+                "hidden": false,
+                "targetId": "3b98-f108-79fc-c086",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "b6dd-a2c6-69d5-1087",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Armour",
+            "id": "8a3c-ab73-0c70-1eef",
+            "collective": false,
+            "defaultSelectionEntryId": "23e3-0548-ab99-9192",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "e597-c26b-a496-1334",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "1f43-3f1b-af7d-54c1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Medium Armour",
+                "id": "23e3-0548-ab99-9192",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "fc2d-cd65-5775-ea91",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "No Armour",
+                "id": "f46c-b743-d125-e40f",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "4234-26ac-350f-5eee",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": -4}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Katana",
+        "id": "9151-ea29-bcd1-75f1",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5490-08ff-a6c2-c088",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "0075-48f1-ca67-fa33",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Katana",
+            "id": "9493-4ca5-d92e-b798",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+0", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wakizashi",
+        "id": "8b37-177b-693f-f617",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2edb-1f08-bac3-edc8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "4aea-0440-bc8a-fd08",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Wakizashi",
+            "id": "e236-3d91-f23e-3652",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nodachi",
+        "id": "3af2-5f6f-b7bb-a9a6",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c605-81a3-d7db-e325",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "profiles": [
+          {
+            "name": "Nodachi",
+            "id": "ac60-d469-59eb-461d",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+1", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Nodachi",
+            "id": "6fe0-8c3e-59eb-68b1",
+            "description": "Nodachi: +1 initiative in the first round of combat, -1 in all subsequent rounds.",
+            "hidden": false,
+            "publicationId": "8a0d-61fc-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Tetsubo",
+        "id": "d98c-5c5f-fa8d-fb0c",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1a44-db79-ba05-fe52",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "profiles": [
+          {
+            "name": "Tetsubo",
+            "id": "4541-9e31-c241-9ba2",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+1", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Tetsubo",
+            "id": "9ed3-4544-309b-b1c8",
+            "description": "If an Attack Roll is Enhanced, add an additional +1 modifier.",
+            "hidden": false,
+            "publicationId": "8a0d-61fc-pub1"
+          }
+        ]
+      },
+      {
+        "name": "Teppo",
+        "id": "00d6-e5ad-fcf8-df86",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9945-87e8-4b28-763d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "9038-f3ed-f78a-055d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "modifiers": [
+          {
+            "field": "9038-f3ed-f78a-055d",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "repeats": 1,
+                "scope": "roster",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Teppo",
+            "id": "b098-679b-0ee1-1053",
+            "hidden": false,
+            "typeId": "dc69-12a4-79f5-5ac5",
+            "typeName": "Missile Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "2a49-ff1e-99ba-3042"},
+              {"name": "Shoot", "$text": "+0", "typeId": "b396-8a3f-a339-6de2"},
+              {"name": "Range", "$text": "48\"", "typeId": "bd09-85ef-8223-5ba2"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Teppo",
+            "id": "d244-155d-9f21-927f",
+            "description": "The teppo, or arquebus, must be reloaded before it can be fired again (see Action Phase, below). Whenever a teppo is fired, it is helpful to place a small ball of cotton wool or similar next to the model to signify this. A teppo is inaccurate at long ranges, and so all shots of more than 24” incur an additional -1 penalty. Models that are fired at with a teppo do not gain any benefits from light or medium armour, and heavy armour is considered to be light armour.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Yumi",
+        "id": "2322-3d44-b107-5a5d",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9cee-9928-5278-e1b5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "78fb-58c0-0971-1a0a",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "modifiers": [
+          {
+            "field": "78fb-58c0-0971-1a0a",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "repeats": 1,
+                "scope": "roster",
+                "shared": true,
+                "value": 2
+              }
+            ]
+          },
+          {
+            "field": "78fb-58c0-0971-1a0a",
+            "type": "decrement",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "00d6-e5ad-fcf8-df86",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "repeats": 1,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Yumi",
+            "id": "0caf-28ce-0dc0-7ed5",
+            "hidden": false,
+            "typeId": "dc69-12a4-79f5-5ac5",
+            "typeName": "Missile Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "2a49-ff1e-99ba-3042"},
+              {"name": "Shoot", "$text": "+0", "typeId": "b396-8a3f-a339-6de2"},
+              {"name": "Range", "$text": "48\"", "typeId": "bd09-85ef-8223-5ba2"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shuriken",
+        "id": "0570-5331-364f-15ac",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cd63-2bc7-4359-6012",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Shuriken",
+            "id": "e5ac-fdeb-1b31-5a40",
+            "hidden": false,
+            "typeId": "dc69-12a4-79f5-5ac5",
+            "typeName": "Missile Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "2a49-ff1e-99ba-3042"},
+              {"name": "Shoot", "$text": "-2", "typeId": "b396-8a3f-a339-6de2"},
+              {"name": "Range", "$text": "6\"", "typeId": "bd09-85ef-8223-5ba2"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Shuriken", "id": "cb60-f3e6-c7e9-490c", "description": "There is no penalty for moving and using a shuriken.", "hidden": false}]
+      },
+      {
+        "name": "Tanto",
+        "id": "2297-8a5f-c643-48eb",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2233-725b-9421-1480",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Tanto",
+            "id": "b4c3-3167-f49f-1084",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "-1", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Naginata",
+        "id": "8a34-e88e-a86b-cc45",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5af5-3561-7578-5fd9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "profiles": [
+          {
+            "name": "Naginata",
+            "id": "3ede-c62b-3ea1-f991",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+1", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yari",
+        "id": "6619-d59a-6d3d-5341",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a8bf-13a4-0b2a-8268",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "profiles": [
+          {
+            "name": "Yari",
+            "id": "7a49-0e77-21d4-af3c",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+2", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Yari", "id": "729c-3954-54b1-0998", "description": "+1 Attack Roll Modifier if mounted and making a ride-by attack.", "hidden": true}]
+      },
+      {
+        "name": "Nagae-yari",
+        "id": "d347-7811-7863-bae4",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "dad3-297d-9e16-cc40",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "profiles": [
+          {
+            "name": "Nagae-yari",
+            "id": "95d8-c205-1d30-2e10",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+3/-2", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Nagae-yari",
+            "id": "69d0-6e8c-d9a2-ff91",
+            "description": "This weapon provides a +3 Initiative bonus in the first round ofcombat. However, ifthis same combat continues for another turn, the wielder suffers a -2 Initiative penalty for each subsequent turn.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Jo",
+        "id": "12ad-159c-4293-a66c",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a992-19fd-da9a-b0df",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Jo",
+            "id": "4b60-8db2-d546-0a83",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+1", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bo",
+        "id": "f4c1-d4b2-9450-f4d5",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e424-00ac-0424-11d1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Bo",
+            "id": "9a44-e08d-6835-700e",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+0", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kasurigama",
+        "id": "91a9-610e-628d-a4ed",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3b39-7562-89b9-503d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Kasurigama",
+            "id": "555d-7567-7b02-79db",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "+1/-", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Kasurigama",
+            "id": "af54-b8ad-3b48-ee9c",
+            "description": "This weapon provides a +1 Initiative Bonus in the first round of combat and +1 to any subdue attempt",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Weaponless",
+        "id": "abee-74e2-1752-23b1",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9559-e390-2ad0-7f2e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Weaponless",
+            "id": "2b0f-15c6-e11b-2a77",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1/-", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "-1", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Weaponless",
+            "id": "c53d-5e6d-83a8-6c49",
+            "description": "This represents fighting without a weapon, using punches, kicks and grappling techniques. Such attacks suffer an additional -1 penalty when directed against models equipped with heavy armour.",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Improvised weapon",
+        "id": "e4b7-fb7f-9162-13f0",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "527d-82b9-4977-7ae6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "profiles": [
+          {
+            "name": "Improvised weapon",
+            "id": "dd67-97a6-72da-2b8b",
+            "hidden": false,
+            "typeId": "e098-25d7-b6d3-36bb",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "Combat Pool", "$text": "+0", "typeId": "d706-c272-0576-d554"},
+              {"name": "Initiative", "$text": "-1/-", "typeId": "921a-e2e7-3cce-4231"},
+              {"name": "Fight", "$text": "+0", "typeId": "d3c6-d2fb-9b27-2c91"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bujutsu",
+        "id": "7d71-17f4-c602-fcd3",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Bujutsu",
+            "id": "0cf2-5bcc-3673-d28b",
+            "description": "Each type of Bujutsu is linked to a particular weapon type, giving that model an advantage when wielding that weapon. When using that weapon, the model is permitted to re-roll one Attack or\nDefence Roll die each time time it makes an Attack or Defence Roll (or Shooting Attack Roll if the Bujutsu relates to a missile weapon). If this ability is used in conjunction with a Enhanceed Attack Roll, the re-roll must be done AFTER the additional die is discarded.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Weapon",
+            "id": "729f-6df8-5911-e6a7",
+            "collective": false,
+            "defaultSelectionEntryId": "0ca4-ba5e-a73d-4b92",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "0ff5-4dcc-fe84-2a68",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "d3f7-e87b-c514-ffe3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Katana/Wakizashi/Nodachi (Kenjutsu)",
+                "id": "0ca4-ba5e-a73d-4b92",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Naginata (Naginatatjutsu)",
+                "id": "1166-5b46-f0e8-27a0",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Yari (Sojutsu)",
+                "id": "928e-5e3f-f0d3-4608",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Jo (Jojutsu)",
+                "id": "ea88-02b1-c603-a58e",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Bo (Bojutsu)",
+                "id": "4f77-dc56-ece3-7307",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Tetsubo (Tetsubojutsu)",
+                "id": "6f0d-ace1-7865-8cbb",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Kasurigama (Kasurigamajustsu)",
+                "id": "0ac3-afff-172a-e123",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Weaponless (Jujutsu)",
+                "id": "f020-1781-3b12-a0a0",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Teppo (Hojutsu)",
+                "id": "a516-c9af-05c7-6a0d",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              },
+              {
+                "name": "Yumi (Kyujutsu)",
+                "id": "b105-00fa-60e7-ae07",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Acrobatic",
+        "id": "f5ad-442c-6970-f151",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a109-fb99-0abb-200b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Acrobatic",
+            "id": "73c4-fcb9-afdd-2cd8",
+            "description": "This model is extremely agile and not affected by Difficult terrain, and also counts Impassable terrain as Difficult terrain. Also, this model may not be attacked ifit chooses to Withdraw. Finally, this model can move through friendly models so long as there is room for the model’s base wherever it completes its movement.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Commander",
+        "id": "c091-2f09-a56b-ba58",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7b1d-60c7-9a1e-7830",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Commander",
+            "id": "fb98-4d78-6f16-38f9",
+            "description": "If a Buntai has at least one model with this ability, it gets a -1 Modifier on any Morale check.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bajutsu",
+        "id": "ede0-82f6-4606-cb07",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d6f4-352a-10e3-180c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [{"name": "Bajutsu", "id": "a285-62d0-eece-ab23", "description": "This art allows the model to fight while mounted without any penalty.", "hidden": false}]
+      },
+      {
+        "name": "Niten",
+        "id": "60c0-5d7b-f48a-9a2e",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "37b9-f04d-47ca-3657",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "modifiers": [
+          {
+            "field": "37b9-f04d-47ca-3657",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "0ca4-ba5e-a73d-4b92",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Niten",
+            "id": "4c3b-a9ce-e7e6-f7bb",
+            "description": "This art requires the model to already be proficient in any ofthe Weapons Bujustu. All attacks from yumi\nagainst this model suffer an additional -2 penalty to the Attack Roll on top ofany other Modifiers.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Senjo-jutsu",
+        "id": "63dc-7da0-a83f-1347",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "38df-e911-fb43-26bb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Senjo-jutsu",
+            "id": "cdc1-116f-1d1c-7864",
+            "description": "This art allows the player to either re-roll the Priority die roll or force his opponent to re-roll his Priority die roll.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Yadome-jutsu",
+        "id": "612f-4ecc-7ece-beb6",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "79a6-0f84-136a-dcea",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "modifiers": [
+          {
+            "field": "79a6-0f84-136a-dcea",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "7d71-17f4-c602-fcd3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Yadome-jutsu",
+            "id": "3f89-5570-2817-f321",
+            "description": "This art requires the model to already be proficient in any of the Weapons Bujustu. All attacks from yumi against this model suffer an additional -2 penalty to the Attack Roll on top of any other Modifiers.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Fast",
+        "id": "642d-392d-f40a-51b1",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ff36-9004-bc0a-3a1f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Fast",
+            "id": "067e-94db-bf6a-9d52",
+            "description": "This model gains +1 to all Initiative Rolls and automatically wins any Initiative draws.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Fearless",
+        "id": "d07c-a745-99a6-f7ef",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4dd3-ff1f-6460-52b4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [{"name": "Fearless", "id": "6b09-34b2-84c5-c12e", "description": "This model ignores the results ofany Morale Test.", "hidden": false}]
+      },
+      {
+        "name": "Inexorable",
+        "id": "a2fd-092d-0a66-247a",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e28b-b345-d281-920b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Inexorable",
+            "id": "a213-c1e0-f490-35f3",
+            "description": "A model with Inexorable may move short distances and attack different models during a single Combat Phase. If a model with this ability kills all of the models that it is fighting in the Combat Phase (in otherwords, inflicts Critical wounds on them all) it may immediately move up to 2” into base-to-base contact with another enemy model. If this model still has at least one Attack Counter in its Combat pool, it may use this move to engage another enemy model. This may result in a number ofsituations:\n• If the enemy model is not currently engaged and has not yet been activated this turn, then it must draw counters equal to its Combat Pool and it fights a combat. The attacking model, however, is limited to the Attack Counters that remained from the previous combat that it fought.\n• Ifthe enemy model is not currently engaged but has already been activated this turn, then it is allocated a single Defence Counter and the two models fight a combat. The attacking model is still limited to the Attack Counters that remained from the previous combat that it fought.\n• If the model has no option other than to engage more than one enemy model when using this ability (i.e. moves into base-to-base contact with several models) then it must fight all ofthem using the rules above.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Intuition",
+        "id": "de06-d885-7a55-64fd",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "08fd-ba2e-f802-f8c0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [{"name": "Intuition", "id": "f799-8eb8-b06c-26b8", "description": "This model gains one free Defence Counter each turn.", "hidden": false}]
+      },
+      {
+        "name": "Powerful",
+        "id": "d055-1027-faa0-0b50",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e862-0559-d640-4bf4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [{"name": "Powerful", "id": "fd00-41e3-4afd-e4b3", "description": "This model gains +1 to all Attack Rolls.", "hidden": false}]
+      },
+      {
+        "name": "Tough Yojimbo ",
+        "id": "e4e2-189d-1baa-7f31",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5757-93cb-afea-ef9e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Tough Yojimbo ",
+            "id": "216d-8270-c02c-3a68",
+            "description": "This model is particularly hardy and ignores the effects of Light wounds. However, the model still counts as having a Light wound, so if it suffers an additional Light wound it will have a Grievous wound, and so on. Additionally, if this model suffers a Critical wound it is not removed until the end ofthe current Combat Phase, and so may have the opportunity to make a final attack.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Yojimbo",
+        "id": "438a-d700-4540-c950",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d9d9-9933-ad9d-538f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 3}],
+        "rules": [
+          {
+            "name": "Yojimbo",
+            "id": "7e8d-e7de-c9f0-95e8",
+            "description": "Yojimbo is Japanese for ‘bodyguard’. Once per game, at the beginning ofthe turn, you may choose to physically swap this model with the Leader ofits Buntai as long as the two models are within 3” of each other. Additionally, once per turn, if the highest ranking model in the Buntai is the target ofa shooting attack, that attack may be directed at the model with Yojimbo instead ifit is within 3”.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Horse",
+        "id": "c924-988b-d21b-b67d",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 10}],
+        "rules": [
+          {
+            "name": "Horse",
+            "id": "7b73-8f57-1d4b-45fd",
+            "description": "Mounted models may move up to 12” in the Move Phase and still engage in combat. A mounted model may make a Gallop move up to 18” as long as it does not move within 1” of an enemy model.\nMounted models may not enter difficult terrain or buildings.\nFIGHTING WHEN MOUNTED\nFighting while mounted incurs a -2 penalty to the Attack Roll. Using a yumi while mounted incurs a -2 penalty to the Shooting Attack Roll. A teppo may not be used while mounted. Models with the Bajutsu Attribute will ignore these penalties.\nA foot model that is in combat with a mounted model may choose to attack either the mount or its rider. In mounted-versus-mounted combat, the riders must attack each other. When attacking a mount, it is considered to have a Fight Characteristic of 1 and no armour but always has Enhanced Defence Rolls. If a mount suffers a Grievous wound (or worse) then its rider is immediately thrown\nSHOOTING AT MOUNTED MODELS\nThere are two ways to shoot at a mounted model. The shooter can attempt to target either the rider or the mount, which will incur an additional -1 penalty to the Shooting Attack Roll. Otherwise, before making the Shooting Attack Roll, roll a d6. On a result of 1–4 the target of the attack is the mount, and on a 5–6 it is the rider. Mounts are considered to have light armour against shooting attacks, which is automatically negated if shot at by a teppo. \nRIDE-BY ATTACK\nA ride-by attack is a special type of attack that can only be made by mounted models. Unlike other movement, this happens in the Combat Phase. To be eligible to make a ride-by attack, the model must not already be engaged and must not have moved this turn. The model is activated in the Combat Phase (ignoring the normal rule of only activating models that are in combat). The model is then moved up to 9” into base-to-base contact with one or more enemy models. A combat is fought as usual, except that all models must halve their Combat Pool (rounding up, with a minimum of one). The rider has an Initiative bonus of +1 in this combat. As soon as the combat is resolved, the mounted model may, if able, immediately move up to 9” (not passing within 1” of an enemy model). \nTHROWN RIDERS\nWhen a rider is thrown, replace the mounted model with a foot model and give this model a Stunned counter. The mount leaves play and cannot be used again.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Warhorse",
+        "id": "5cd1-2ed2-5edc-cfb1",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 15}],
+        "profiles": [
+          {
+            "name": "Warhorse",
+            "id": "1bfb-1279-2b57-5c4d",
+            "hidden": false,
+            "typeId": "b828-13a7-92f7-a18e",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Rank", "$text": "-", "typeId": "49f4-9335-3be0-698e"},
+              {"name": "CP", "$text": "-", "typeId": "3ecc-5b19-34bd-13d9"},
+              {"name": "Initiative", "$text": "1", "typeId": "34fd-a5bd-1529-7da5"},
+              {"name": "Fight", "$text": "1", "typeId": "8958-bb37-bf92-f529"},
+              {"name": "Shoot", "$text": "-", "typeId": "6f7f-4f32-c392-ebcf"},
+              {"name": "Armour", "$text": "-", "typeId": "135e-7812-2cfa-61d6"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Warhorse",
+            "id": "87c7-44ea-a74b-a6f7",
+            "description": "Some horses are particularly suited to combat – Samurai often rode ungelded stallions into battle\nto capitalise on the animal’s natural aggression. Warhorses have a Fight Characteristic of 1, a\nsingle Attack Counter and an Initiative of 1, and fight in combat like all other models. If the combat\nis between two mounted models, the warhorse must attack the other mount.\nMOUNTED MODELS\nMounted models may move up to 12” in the Move Phase and still engage in combat. A mounted\nmodel may make a Gallop move up to 18” as long as it does not move within 1” of an enemy\nmodel. Mounted models may not enter difficult terrain or buildings.\nFIGHTING WHEN MOUNTED\nFighting while mounted incurs a -2 penalty to the Attack Roll. Using a yumi while mounted incurs a\n-2 penalty to the Shooting Attack Roll. A teppo may not be used while mounted. Models with the\nBajutsu Attribute will ignore these penalties.\nA foot model that is in combat with a mounted model may choose to attack either the mount or\nits rider. In mounted-versus-mounted combat, the riders must attack each other. When attacking a\nmount, it is considered to have a Fight Characteristic of 1 and no armour but always has Enhanced\nDefence Rolls. If a mount suffers a Grievous wound (or worse) then its rider is immediately\nthrown\nSHOOTING AT MOUNTED MODELS\nThere are two ways to shoot at a mounted model. The shooter can attempt to target either the rider\nor the mount, which will incur an additional -1 penalty to the Shooting Attack Roll. Otherwise,\nbefore making the Shooting Attack Roll, roll a d6. On a result of 1–4 the target of the attack is the\nmount, and on a 5–6 it is the rider. Mounts are considered to have light armour against shooting\nattacks, which is automatically negated if shot at by a teppo.\nRIDE-BY ATTACK\nA ride-by attack is a special type of attack that can only be made by mounted models. Unlike other\nmovement, this happens in the Combat Phase. To be eligible to make a ride-by attack, the model\nmust not already be engaged and must not have moved this turn. The model is activated in the\nCombat Phase (ignoring the normal rule of only activating models that are in combat). The model\nis then moved up to 9” into base-to-base contact with one or more enemy models. A combat is\nfought as usual, except that all models must halve their Combat Pool (rounding up, with a minimum\nof one). The rider has an Initiative bonus of +1 in this combat. As soon as the combat is resolved,\nthe mounted model may, if able, immediately move up to 9” (not passing within 1” of an enemy\nmodel).\nTHROWN RIDERS\nWhen a rider is thrown, replace the mounted model with a foot model and give this model a\nStunned counter. The mount leaves play and cannot be used again.",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Banner",
+        "id": "4ec7-f940-8358-ebd2",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b61c-e4c4-c9ae-ea6c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "7caa-6622-6b1e-9b13", "value": 0}],
+        "rules": [
+          {
+            "name": "Banner",
+            "id": "e9cd-add2-f72e-2ce6",
+            "description": "• The model may not voluntarily engage in combat.\n• If engaged in combat by the enemy, the model suffers a -1 penalty to all Initiative, Attack and\nDefence Rolls. The model may only use a katana (or equivalent) in combat.\n• If the model carrying the banner is killed, the banner is left and may be picked up by any model\nin the Action Phase.\n• Banners are worth Victory Points if captured by the enemy, as detailed under Scenarios.\n• While the banner is in the possession of a living model, the Buntai may re-roll failed Morale\nTests.\n• Captured enemy Banners are worth 5 Victory Points.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Samurai Weapons",
+        "id": "f54c-5cb2-5f3c-4664",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "e852-0617-8c2b-2b25",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "New EntryLink", "id": "44f6-cd1e-5745-e216", "hidden": false, "targetId": "8a34-e88e-a86b-cc45", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "eff0-787b-e1e0-1099", "hidden": false, "targetId": "3af2-5f6f-b7bb-a9a6", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "7232-4213-b7bd-ccc7", "hidden": false, "targetId": "00d6-e5ad-fcf8-df86", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "8954-47a2-e56a-0aaf", "hidden": false, "targetId": "d98c-5c5f-fa8d-fb0c", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "ca6a-210b-107c-70a1", "hidden": false, "targetId": "2322-3d44-b107-5a5d", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "2a43-4c93-1973-dffe", "hidden": false, "targetId": "6619-d59a-6d3d-5341", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Atributes",
+        "id": "3b98-f108-79fc-c086",
+        "collective": false,
+        "hidden": false,
+        "entryLinks": [
+          {"name": "New EntryLink", "id": "ca4a-2c5f-9334-5070", "hidden": false, "targetId": "f5ad-442c-6970-f151", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "c73e-13d1-ada7-bddc", "hidden": false, "targetId": "c091-2f09-a56b-ba58", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "db4e-fd88-e840-c8ce", "hidden": false, "targetId": "7d71-17f4-c602-fcd3", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "a9df-5e69-2b34-72a5", "hidden": false, "targetId": "612f-4ecc-7ece-beb6", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "0805-cb5b-9d88-4df9", "hidden": false, "targetId": "ede0-82f6-4606-cb07", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "5189-1207-1952-7313", "hidden": false, "targetId": "60c0-5d7b-f48a-9a2e", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "4b72-a522-d0a0-58d2", "hidden": false, "targetId": "63dc-7da0-a83f-1347", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "986e-ccb9-3f99-0d6d", "hidden": false, "targetId": "642d-392d-f40a-51b1", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "01ee-1e17-9d7f-1b85", "hidden": false, "targetId": "d07c-a745-99a6-f7ef", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "c1f9-4bc1-7212-7760", "hidden": false, "targetId": "438a-d700-4540-c950", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "e248-7925-42a3-28cf", "hidden": false, "targetId": "e4e2-189d-1baa-7f31", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "2313-f2ec-6387-b198", "hidden": false, "targetId": "d055-1027-faa0-0b50", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "b86c-899e-2bf9-f516", "hidden": false, "targetId": "a2fd-092d-0a66-247a", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "7a99-3659-fbe6-9de1", "hidden": false, "targetId": "de06-d885-7a55-64fd", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Mounts",
+        "id": "a5f8-98d7-ed9f-02f4",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "eb38-8ef1-4163-9096",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "New EntryLink", "id": "ab32-3208-8f63-bd80", "hidden": false, "targetId": "c924-988b-d21b-b67d", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "2914-bf79-b533-7555", "hidden": false, "targetId": "5cd1-2ed2-5edc-cfb1", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Ashigaru Weapons",
+        "id": "b832-67f5-280e-9cb0",
+        "collective": false,
+        "defaultSelectionEntryId": "955e-dd5b-974a-4e37",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "4dcf-ca21-4e1c-6a66",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "c6a6-0ae0-17f2-d295",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "384a-1e75-5b8b-e48d",
+            "hidden": false,
+            "targetId": "00d6-e5ad-fcf8-df86",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "cef5-c52d-303b-eaf1",
+            "hidden": false,
+            "targetId": "2322-3d44-b107-5a5d",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "955e-dd5b-974a-4e37",
+            "hidden": false,
+            "targetId": "6619-d59a-6d3d-5341",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "e280-09be-6e5b-e488",
+            "hidden": false,
+            "targetId": "d347-7811-7863-bae4",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "b55b-86e1-8467-fa23",
+            "hidden": false,
+            "targetId": "4ec7-f940-8358-ebd2",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": -3}]
+          }
+        ]
+      },
+      {
+        "name": "Ashigaru-Gashira Weapons",
+        "id": "9c67-283f-86ff-3bdd",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "804e-784d-c5f4-9099",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "New EntryLink", "id": "ee10-b06e-eee2-c873", "hidden": false, "targetId": "00d6-e5ad-fcf8-df86", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "04de-6e35-21a9-ac31", "hidden": false, "targetId": "2322-3d44-b107-5a5d", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "d139-17d4-91c0-8b4e", "hidden": false, "targetId": "6619-d59a-6d3d-5341", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "9540-46ca-b877-d799", "hidden": false, "targetId": "d347-7811-7863-bae4", "type": "selectionEntry"},
+          {"name": "New EntryLink", "id": "49d8-3cf1-648f-8c80", "hidden": false, "targetId": "4ec7-f940-8358-ebd2", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Warrior Monk Weapons",
+        "id": "5eec-3fbb-226d-08db",
+        "collective": false,
+        "defaultSelectionEntryId": "0b9a-a274-cc65-74f5",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "0bfd-b687-6d8e-0816",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f952-033b-58e1-9187",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "0b9a-a274-cc65-74f5",
+            "hidden": false,
+            "targetId": "8a34-e88e-a86b-cc45",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "0ca4-5ea3-6437-2c0c",
+            "hidden": false,
+            "targetId": "d98c-5c5f-fa8d-fb0c",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "8d46-1773-e2b3-9cd3",
+            "hidden": false,
+            "targetId": "2322-3d44-b107-5a5d",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Ninja Weapons",
+        "id": "5c7b-bfc4-c45c-432b",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "b244-1302-95bd-5323",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0b1e-bcf7-1a75-a6cf",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "New EntryLink", "id": "b49b-96c5-2e5e-112d", "hidden": false, "targetId": "91a9-610e-628d-a4ed", "type": "selectionEntry"},
+          {
+            "name": "New EntryLink",
+            "id": "2e6a-fca9-4bfd-6c41",
+            "hidden": false,
+            "targetId": "9151-ea29-bcd1-75f1",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "5490-08ff-a6c2-c088", "type": "set", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Initiate Weapons",
+        "id": "63aa-c82a-738f-8b71",
+        "collective": false,
+        "defaultSelectionEntryId": "0fd8-5b45-6554-221c",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "3624-5671-59ec-d6f9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "41f8-10cf-2dce-b10d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "New EntryLink",
+            "id": "4a6f-bc6c-a243-3c64",
+            "hidden": false,
+            "targetId": "8a34-e88e-a86b-cc45",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "6e6e-83b4-2188-dab5",
+            "hidden": false,
+            "targetId": "d98c-5c5f-fa8d-fb0c",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "0fd8-5b45-6554-221c",
+            "hidden": false,
+            "targetId": "2322-3d44-b107-5a5d",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          },
+          {
+            "name": "New EntryLink",
+            "id": "a572-639e-a9e9-09d9",
+            "hidden": false,
+            "targetId": "00d6-e5ad-fcf8-df86",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "7caa-6622-6b1e-9b13", "type": "set", "value": 0}]
+          }
+        ]
+      }
+    ]
+  }
+}
